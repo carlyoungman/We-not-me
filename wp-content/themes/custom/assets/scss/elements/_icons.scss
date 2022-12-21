@@ -1,0 +1,90 @@
+$icon-size: (
+  xxs: 10px,
+  xs: 15px,
+  s: 25px,
+  m: 35px,
+  l: 45px,
+  xl: 55px
+);
+@each $name, $value in $icon-size {
+  &.icon-#{$name} {
+    width: $value;
+    height: $value;
+  }
+}
+@each $iconColours, $value in $colours {
+  &.icon-#{$iconColours} {
+    fill: $value;
+  }
+  &.background-#{$iconColours} {
+    background: $value;
+  }
+  .icon-button {
+    &.background-#{$iconColours} {
+      background: $value;
+      &:hover {
+        background: darken($value, 15%);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.dot {
+  display: block;
+  border-radius: 100%;
+  box-shadow: $box-shadow;
+  margin: 0 auto;
+}
+
+.icon {
+  transition: $link-transition;
+  &.clicked {
+    @include scale(0.9);
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+.icon-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 100%;
+  margin-right: $universal-space;
+  box-shadow: $box-shadow;
+}
+svg.icon.icon-logo {
+  width: 60px;
+  height: 25px;
+}
+
+.hamburger {
+  padding: 0px;
+  outline: none !important;
+  .hamburger-box {
+    width: 30px;
+  }
+  .hamburger-inner,
+  .hamburger-inner:after,
+  .hamburger-inner:before {
+    height: 2px;
+    width: 30px;
+  }
+}
+
+.back-to-top {
+  margin: 0 auto;
+  margin-bottom: -5px;
+  display: table;
+  padding: $universal-space;
+  background: #cccccc;
+  box-shadow: $box-shadow;
+  border-radius: $border-radius $border-radius 0px 0px;
+  transition: $link-transition;
+  &:hover {
+    cursor: pointer;
+    background: $brand-blue;
+  }
+}

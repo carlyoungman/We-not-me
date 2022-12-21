@@ -1,0 +1,38 @@
+section.sharing-icons {
+  padding-top: 0px;
+  h4 {
+    text-align: center;
+    padding: 0px;
+    margin-bottom: $universal-space;
+    &:after {
+      display: none;
+    }
+  }
+  ul.social-sharing {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0px;
+      padding: 0px;
+      margin-right: $universal-space;
+      text-decoration: underline;
+      &:before {
+        display: none;
+      }
+      &:last-of-type {
+        margin-right: 0px;
+      }
+      &:hover {
+        p {
+          color: $brand-blue;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+section.partner-logos {
+  h1 {
+    text-align: center;
+    margin-bottom: $universal-space-xl;
+  }
+  img {
+    filter: grayscale(100%);
+    transition: $link-transition;
+    max-width: 225px;
+    margin: 0 auto;
+    display: block;
+    &:hover {
+      filter: grayscale(0%);
+      cursor: pointer;
+    }
+  }
+}

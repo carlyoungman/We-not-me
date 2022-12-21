@@ -1,0 +1,78 @@
+@each $fontColour, $value in $colours {
+  .font-#{$fontColour} {
+    color: $value;
+  }
+}
+
+html {
+  font-family: $base-font;
+  font-size: $small-font-size;
+  font-style: normal;
+  line-height: $base-line-height;
+
+  -webkit-font-smoothing: antialiased;
+  .White {
+    color: $font-dark;
+  }
+  &.Black {
+    color: $font-light;
+  }
+  @include medium-screen-min {
+    font-size: $medium-font-size;
+  }
+  @include large-screen-min {
+    font-size: $large-font-size;
+  }
+}
+
+.p,
+p {
+  line-height: $base-line-height;
+  color: inherit;
+  margin: 0 0 $universal-space-l;
+  font-family: $base-font;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headline-font;
+  line-height: $headline-line-height;
+  margin: 0 0 $universal-space-l;
+  color: inherit;
+  font-weight: 700;
+}
+
+.h1,
+h1 {
+  font-size: 3.5em;
+}
+
+.h2,
+h2 {
+  font-size: 3em;
+}
+
+.h3,
+h3 {
+  font-size: 2.5em;
+}
+
+.h4,
+h4 {
+  font-size: 2em;
+}
+
+.h5,
+h5 {
+  font-size: 1.5em;
+}
+
+.h6,
+h6 {
+  font-size: 1em;
+}

@@ -1,0 +1,84 @@
+$small-screen: 576px;
+$medium-screen-min: 768px;
+$large-screen: 992px;
+$xLarge-screen: 1200px;
+$xxLarge-screen: 1300px;
+$macbook: 1280px;
+
+@mixin xSmall-screen-min {
+  @media screen and (min-width: #{$xSmall-screen}) {
+    @content;
+  }
+}
+
+@mixin small-screen-min {
+  @media screen and (min-width: #{$small-screen}) {
+    @content;
+  }
+}
+
+@mixin medium-screen-min{
+  @media screen and (min-width: #{$medium-screen-min}) {
+    @content;
+  }
+}
+
+@mixin large-screen-min {
+  @media screen and (min-width: #{$large-screen}) {
+    @content;
+  }
+}
+
+@mixin xLarge-screen-min {
+  @media screen and (min-width: #{$xLarge-screen}) {
+    @content;
+  }
+}
+
+@mixin xxLarge-screen-min {
+  @media screen and (min-width: #{$xxLarge-screen}) {
+    @content;
+  }
+}
+
+@mixin xSmall-screen-max {
+  @media screen and (max-width: #{$xSmall-screen}) {
+    @content;
+  }
+}
+
+@mixin small-screen-max {
+  @media screen and (max-width: #{$small-screen}) {
+    @content;
+  }
+}
+
+@mixin medium-screen-max {
+  @media screen and (max-width: #{$medium-screen-min}) {
+    @content;
+  }
+}
+
+@mixin large-screen-max {
+  @media screen and (max-width: #{$large-screen}) {
+    @content;
+  }
+}
+
+@mixin xLarge-screen-max {
+  @media screen and (max-width: #{$xLarge-screen}) {
+    @content;
+  }
+}
+
+@mixin xxLarge-screen-max {
+  @media screen and (max-width: #{$xLarge-screen}) {
+    @content;
+  }
+}
+
+@mixin macbook-screen-max {
+  @media screen and (max-width: #{$macbook}) {
+    @content;
+  }
+}

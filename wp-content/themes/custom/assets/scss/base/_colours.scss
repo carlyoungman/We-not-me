@@ -1,0 +1,31 @@
+$font-dark: #292627;
+$font-light: #f3f4f4;
+
+$brand-black: #292627;
+$brand-white: #ffff;
+$brand-gray: #4c4d4f;
+
+$brand-red: #e63329;
+$brand-blue: #243588;
+$brand-yellow: #ffe700;
+
+$blue: #739dd3;
+$yellow: #fdbb30;
+$green: #74c69c;
+$pink: #e877af;
+$purple: #b9b2d8;
+
+$colours: (
+  black: $black,
+  white: $white,
+  gray: $brand-gray,
+  brand-red: $brand-red,
+  brand-blue: $brand-blue,
+  brand-yellow: $brand-yellow,
+  blue: $blue,
+  red: $brand-red,
+  yellow: $yellow,
+  green: $green,
+  pink: $pink,
+  purple: $purple
+);

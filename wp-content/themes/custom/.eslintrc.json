@@ -1,0 +1,19 @@
+{
+  "env": {
+    "browser": true
+  },
+  "extends": ["eslint:recommended", "google"],
+  "rules": {
+    "func-names": 0,
+    "no-unused-vars": "off",
+    "space-before-function-paren": [
+      0,
+      { "anonymous": "always", "named": "never" }
+    ]
+  },
+  "plugins": ["html"],
+  "globals": {
+    "$": false,
+    "jQuery": false
+  }
+}

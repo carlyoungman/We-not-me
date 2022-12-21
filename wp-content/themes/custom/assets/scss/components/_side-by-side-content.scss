@@ -1,0 +1,9 @@
+section.side-by-side-content {
+  padding: 0px 0px $universal-space-l 0px;
+
+  @include large-screen-min {
+    max-width: calc(100% - 120px - 30px);
+    margin: 0 auto;
+    padding: 0px 0px $universal-space-xl 0px;
+  }
+}

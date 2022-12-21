@@ -1,0 +1,30 @@
+ul.shuffle {
+  list-style: none;
+  margin-top: $universal-space-l;
+  margin-bottom: 0px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  li {
+    text-decoration: none;
+    margin: 0px;
+    display: flex !important;
+    padding: 0px;
+    &:before {
+      display: none;
+    }
+  }
+}
+ul.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  @include large-screen-max {
+    margin: $universal-space-l 0px;
+  }
+  li {
+    margin-right: $universal-space-l;
+    &:last-of-type {
+      margin-right: 0px;
+    }
+  }
+}

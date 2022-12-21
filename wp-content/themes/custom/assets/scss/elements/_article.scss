@@ -1,0 +1,100 @@
+article {
+  margin: 0 auto;
+  max-width: 720px;
+  width: 100%;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    padding-bottom: $universal-space-l;
+    margin-bottom: $universal-space-l;
+    position: relative;
+    &:after {
+      width: 75px;
+      height: 3px;
+      background: $brand-black;
+      content: '';
+      display: block;
+      position: absolute;
+      border-radius: $border-radius;
+      bottom: 0px;
+    }
+  }
+
+  p:last-of-type {
+    margin-bottom: 0px;
+  }
+
+  ul {
+    margin: $universal-space 0px;
+    li {
+      margin-bottom: $universal-space;
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding-left: $universal-space-l;
+      &:last-of-type {
+        margin-bottom: 0px;
+      }
+      &:before {
+        width: 10px;
+        height: 10px;
+        background: $brand-black;
+        border-radius: 100%;
+        content: '';
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+  ul.gallery {
+    margin: $universal-space 0px $universal-space-l 0px;
+    li {
+      padding: 0px;
+      margin: 0px;
+      &:before {
+        display: none;
+        li {
+          padding: 0px;
+          margin: 0px;
+        }
+      }
+    }
+    ul.slick-dots {
+      height: auto;
+      position: relative;
+      li {
+        background: none;
+        border: 2px solid $brand-black;
+        padding: 0px;
+        margin: 0px $universal-space;
+        &.slick-active {
+          background: $brand-black;
+        }
+      }
+    }
+  }
+  img {
+    margin: $universal-space-l 0px;
+  }
+}
+
+address {
+  @extend p;
+  a {
+    width: 100%;
+    display: block;
+    margin-bottom: 0px !important;
+    margin-top: $universal-space !important;
+  }
+}
+
+a {
+  color: inherit;
+  &:hover {
+    color: $yellow;
+  }
+}

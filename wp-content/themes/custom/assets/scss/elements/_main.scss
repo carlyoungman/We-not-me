@@ -1,0 +1,53 @@
+body {
+  background: $brand-white;
+
+  &.home {
+    overflow: hidden;
+    &.hide-screen {
+      overflow-y: auto;
+    }
+  }
+
+  &.white {
+    main#main {
+      background: $brand-white;
+      color: $font-dark;
+    }
+  }
+  &.black {
+    main#main {
+      background: $brand-black;
+      color: $font-light;
+    }
+    ul.navigation-overlay svg {
+      fill: $brand-white;
+    }
+    &.show-main-menu {
+      ul.navigation-overlay svg {
+        fill: $brand-black;
+      }
+    }
+    .hamburger-inner,
+    .hamburger-inner:after,
+    .hamburger-inner:before {
+      background: $brand-white;
+    }
+  }
+  main#main {
+    transition: $global-transition;
+    min-height: 100vh;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  &.show-main-menu,
+  &.show-video-player {
+    main#main {
+      @include scale(0.8);
+      box-shadow: $box-shadow;
+    }
+  }
+}
+.max-width-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}

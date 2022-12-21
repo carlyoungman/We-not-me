@@ -1,0 +1,32 @@
+section.content-image-and-coloured-background {
+  .col-lg-7 {
+    padding: $universal-space-xxl 0px;
+    position: relative;
+  }
+  .headline {
+    align-self: flex-start;
+    position: absolute;
+    z-index: 2;
+    top: $universal-space-l;
+    left: -120px;
+    text-align: right;
+  }
+  .colour-background {
+    background: black;
+    position: absolute;
+    right: 5%;
+    height: 100%;
+    width: 70%;
+
+    @each $backgroundColours, $value in $colours {
+      &.background-#{$backgroundColours} {
+        background: $value;
+      }
+    }
+  }
+  img.background-image {
+    position: relative;
+    z-index: 1;
+    box-shadow: $box-shadow;
+  }
+}

@@ -1,0 +1,6 @@
+section {
+  padding: $universal-space-l 0px;
+  @include large-screen-min {
+    padding: $universal-space-xxl 0px;
+  }
+}

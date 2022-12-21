@@ -1,0 +1,29 @@
+.btn,
+.button,
+.wpcf7-submit,
+.checkout-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: $universal-space-l;
+  padding: $universal-space;
+  font-family: $headline-font;
+  transition: $link-transition;
+  color: $black;
+  text-align: center;
+  border-radius: $border-radius;
+  overflow: hidden;
+  position: relative;
+  font-size: $small-font-size;
+  @include medium-screen-min {
+    font-size: $medium-font-size;
+  }
+  @include large-screen-min {
+    font-size: $large-font-size;
+  }
+  &.disable {
+    opacity: 0;
+    pointer-events: none;
+  }
+}

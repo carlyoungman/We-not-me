@@ -1,0 +1,21 @@
+.full-screen-menus {
+  position: fixed;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(115%);
+  transform: translate3d(0, 115%, 0);
+  transition: $global-transition;
+  z-index: 9;
+  top: 0;
+  padding: 0px;
+}
+
+body.show-main-menu {
+  nav#header_nav {
+    transform: translateX(0%);
+    transform: translate3d(0, 0%, 0);
+  }
+}

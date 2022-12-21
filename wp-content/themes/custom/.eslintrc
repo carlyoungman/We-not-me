@@ -1,0 +1,16 @@
+{
+  "extends": "eslint-config-airbnb-es5",
+  "plugins": ["react"],
+  "rules": {
+    "func-names": 0,
+    "no-unused-vars": "off",
+    "space-before-function-paren": [
+      0,
+      { "anonymous": "always", "named": "never" }
+    ]
+  },
+  "globals": {
+    "$": false,
+    "jQuery": false
+  }
+}
