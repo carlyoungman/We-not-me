@@ -1,7 +1,7 @@
 
-# Alivini
+# We not me
 
-A WordPress based website. This woocommerce project manages its products via a thrid party API
+A WordPress based website. A project that I didnt get paid for and hope to reuse. Has a lot of animation
 
 
 ## Authors
@@ -14,25 +14,25 @@ A WordPress based website. This woocommerce project manages its products via a t
 Clone the project
 
 ```bash
-  git clone https://github.com/carlyoungman/alivini
+  git clone https://github.com/carlyoungman/We-not-me
 ```
 
 Go to the project directory
 
 ```bash
-  cd /wp-content/themes/alivini-child
+  cd /wp-content/themes/custom
 ```
 
 Install dependencies
 
 ```bash
-  npm install composer install
+  npm install
 ```
 
 Start the server
 
 ```bash
-  npm build 
+  gulp watch
 ```
 
 
